@@ -38,8 +38,8 @@ h2 {
   font-size: 1.5em;
   font-weight: bold;
   color: #ffffff;
-  top: 15%;
-  left: 43%;
+  top: 17%;
+  left: 17%;
 }
 
 .declaration-display {
@@ -92,22 +92,22 @@ button:hover {
 }
 
 .envelope1 {
-  content: url(img/envelopefofo.png);
-  width: 20%;
+  content: url(/bigzada/img/envelopefofo.png);
+  width: 30%;
   position: fixed;
-  left: 15%;
-  top: 10%;
+  left: 5%;
+  top: 1%;
   filter: drop-shadow(1.5px 0.75px 1.75px #4d4d4d);
   transform: rotate(-19deg);
   transform-origin: center;
 }
 
 .envelope2 {
-  content: url(img/envelopefofo2.png);
-  width: 20%;
+  content: url(/bigzada/img/envelopefofo2.png);
+  width: 30%;
   position: fixed;
-  left: 70%; /* Ajuste a posição horizontal */
-  top: 47%;  /* Ajuste a posição vertical */
+  left: 69%; /* Ajuste a posição horizontal */
+  top: 83%;  /* Ajuste a posição vertical */
   filter: drop-shadow(1.5px 0.75px 1.75px #4d4d4d);
   transform: rotate(19deg);
   transform-origin: center;
@@ -116,26 +116,26 @@ button:hover {
 .audio {
   position: fixed;
   width: 80%;
-  left: 15%;
+  left: 10%;
   top: 110%;
 }
 
 .card {
   position: relative;
-  width: 270px;
+  width: 2900px;
   height: 380px;
   margin: auto;
   box-shadow: inset 5px 0px 15px 0px rgba(0, 0, 0, 0.1),
     3px 0px 3px -2px rgba(0, 0, 0, 0.3);
-  background-color: #fffffa;
+  background-color: #ffffff;
   transform: scale(1.05);
   left: 12px;
 }
 
 .front {
   position: absolute;
-  width: 110%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   margin: -10px 0px 0px -10px;
   margin: auto;
   border: 1px solid #e0e0db;
@@ -158,14 +158,14 @@ button:hover {
   transform: perspective(800px) rotateY(-170deg);
   box-shadow: 7px 0px 2px 0px rgba(0, 0, 0, 0.3),
     inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
-  background-color: #fffffa;
+  background-color: #fffafa;
 }
 
 .back {
   position: absolute;
-  width: 110%;
+  width: 90%;
   height: 100%;
-  margin: -10px 0px 0px -10px;
+  /* margin: -10px 0px 0px -10px; */
   margin: auto;
   backface-visibility: visible;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
@@ -179,11 +179,8 @@ button:hover {
 }
 
 .text-container {
-  padding: 20px;
-  width: 80%;
-  height: 100%;
-  margin-top: -15px;
-  /* margin: auto; */
+  padding: 1px;
+  margin-top: -10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,8 +199,8 @@ button:hover {
 
 .f-box img {
   margin-top: 0px;
-  height: 100%;
-  width: auto;
+  height: 111%;
+  width: 111%;
 }
 
 @media (max-width: 675px) {
