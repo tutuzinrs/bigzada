@@ -35,9 +35,9 @@ h2 {
   position: fixed;
   font-size: 1.4em; /* Ajustando o tamanho da fonte */
   font-weight: bold;
-  color: #ffffff;
-  top: 15%; /* Ajuste na posição vertical */
-  left: 10%; /* Ajuste na posição horizontal */
+  color: #2d0707;
+  top: 19%; /* Ajuste na posição vertical */
+  left: 16%; /* Ajuste na posição horizontal */
 }
 
 .declaration-display {
@@ -63,8 +63,47 @@ button {
   margin-top: 10px;
 }
 
+.audio {
+  position: fixed;
+  width: 80%;
+  left: 10%;
+  top: 105%;
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 10px; /* Espaçamento interno */
+  display: flex; /* Flexbox para alinhar os itens */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  transition: transform 0.3s ease; /* Animação suave ao mover */
+}
+
+.audio:hover {
+  transform: translateY(-5px); /* Leve movimento para cima ao passar o mouse */
+}
+
+.audio::-webkit-media-controls-panel {
+  background-color: rgba(227, 205, 205, 0.9); /* Fundo do painel de controle */
+  border-radius: 8px; /* Bordas arredondadas do painel */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave do painel */
+}
+
+.audio::-webkit-media-controls-play-button {
+  background-color: #ffffff; /* Cor do botão de play */
+  border-radius: 50%; /* Botão arredondado */
+  padding: 5px; /* Espaçamento interno */
+}
+
+.audio::-webkit-media-controls-volume-slider {
+  background-color: #ffffff; /* Cor do controle de volume */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.audio::-webkit-media-controls-mute-button {
+  background-color: #ffffff; /* Cor do botão de mudo */
+  border-radius: 50%; /* Botão arredondado */
+}
+
 button:hover {
-  background-color: #c74f6b;
+  background-color: #ffffff;
 }
 
 .envelope1 {
@@ -82,8 +121,8 @@ button:hover {
   content: url(img/envelopefofo2.png);
   width: 25%; /* Ajuste para telas menores */
   position: fixed;
-  left: 69%; /* Ajuste a posição horizontal */
-  top: 83%;  /* Ajuste a posição vertical */
+  left: 65%; /* Ajuste a posição horizontal */
+  top: 85%;  /* Ajuste a posição vertical */
   filter: drop-shadow(1.5px 0.75px 1.75px #4d4d4d);
   transform: rotate(19deg);
   transform-origin: center;
@@ -149,11 +188,11 @@ button:hover {
 .text-container {
   padding: 1px;
   margin-top: -10px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #929292;
+  color: #414141;
 }
 
 .f-box {
@@ -175,7 +214,7 @@ button:hover {
 @media (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
   .envelope1,
   .envelope2 {
-    width: 25%; /* Ajuste para telas menores */
+    width: 30%; /* Ajuste para telas menores */
   }
 
   .card {
