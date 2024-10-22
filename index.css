@@ -92,7 +92,7 @@ button:hover {
 }
 
 .envelope1 {
-  content: url(envelopefofo.png);
+  content: url(img/envelopefofo.png);
   width: 30%;
   position: fixed;
   left: 5%;
@@ -103,7 +103,7 @@ button:hover {
 }
 
 .envelope2 {
-  content: url(envelopefofo2.png);
+  content: url(img/envelopefofo2.png);
   width: 30%;
   position: fixed;
   left: 69%; /* Ajuste a posição horizontal */
