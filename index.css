@@ -10,56 +10,54 @@ body {
   display: flex;
   margin: auto;
   background-image: url(https://assets.codepen.io/4927073/Group2.png),
-    linear-gradient(33deg, #ffffff, #f7eded);
-  background-image: url(https://assets.codepen.io/4927073/Group2.png),
     linear-gradient(33deg, #f80505, #251e1e);
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 30px;
+  max-width: 90%; /* Ajuste para telas menores */
+  margin: 30px auto; /* Reduzindo a margem */
+  padding: 25px; /* Reduzindo o padding */
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ajuste na sombra */
   text-align: center;
 }
 
 h1 {
   color: #ff003c;
-  font-size: 2.5em;
-  margin-bottom: 20px;
+  font-size: 2.2em; /* Ajustando o tamanho da fonte */
+  margin-bottom: 15px; /* Reduzindo a margem */
 }
 
 h2 {
   position: fixed;
-  font-size: 1.5em;
+  font-size: 1.4em; /* Ajustando o tamanho da fonte */
   font-weight: bold;
   color: #ffffff;
-  top: 17%;
-  left: 17%;
+  top: 15%; /* Ajuste na posição vertical */
+  left: 10%; /* Ajuste na posição horizontal */
 }
 
 .declaration-display {
-  padding: 20px;
+  padding: 18px; /* Ajustando o padding */
   border: 2px dashed #d35d78;
   border-radius: 8px;
   background-color: #dd0b0b;
-  font-size: 1.5em;
+  font-size: 1.4em; /* Ajustando o tamanho da fonte */
   color: #333;
   margin-bottom: 20px;
 }
 
 button {
   width: 100%;
-  padding: 15px;
+  padding: 12px; /* Ajustando o padding */
   background-color: #d35d78;
   color: white;
   border: none;
   border-radius: 8px;
-  font-size: 1.2em;
+  font-size: 1.1em; /* Ajustando o tamanho da fonte */
   cursor: pointer;
   transition: background-color 0.3s;
   margin-top: 10px;
@@ -69,31 +67,9 @@ button:hover {
   background-color: #c74f6b;
 }
 
-@keyframes heartAnimation {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-150px);
-    opacity: 0;
-  }
-}
-
-@keyframes starAnimation {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-200px);
-    opacity: 0;
-  }
-}
-
 .envelope1 {
   content: url(img/envelopefofo.png);
-  width: 30%;
+  width: 25%; /* Ajuste para telas menores */
   position: fixed;
   left: 5%;
   top: 1%;
@@ -104,7 +80,7 @@ button:hover {
 
 .envelope2 {
   content: url(img/envelopefofo2.png);
-  width: 30%;
+  width: 25%; /* Ajuste para telas menores */
   position: fixed;
   left: 69%; /* Ajuste a posição horizontal */
   top: 83%;  /* Ajuste a posição vertical */
@@ -113,23 +89,16 @@ button:hover {
   transform-origin: center;
 }
 
-.audio {
-  position: fixed;
-  width: 80%;
-  left: 10%;
-  top: 110%;
-}
-
 .card {
   position: relative;
-  width: 2900px;
-  height: 380px;
+  width: 90%; /* Ajustando a largura */
+  height: 320px; /* Ajustando a altura */
   margin: auto;
   box-shadow: inset 5px 0px 15px 0px rgba(0, 0, 0, 0.1),
     3px 0px 3px -2px rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
   transform: scale(1.05);
-  left: 12px;
+  left: 0; /* Ajustando a posição horizontal */
 }
 
 .front {
@@ -162,10 +131,9 @@ button:hover {
 }
 
 .back {
-  position: absolute;
+  position: fixed;
   width: 90%;
   height: 100%;
-  /* margin: -10px 0px 0px -10px; */
   margin: auto;
   backface-visibility: visible;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
@@ -181,10 +149,10 @@ button:hover {
 .text-container {
   padding: 1px;
   margin-top: -10px;
+  font-family: 'Courier New', Courier, monospace;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Roboto;
   color: #929292;
 }
 
@@ -203,13 +171,14 @@ button:hover {
   width: 111%;
 }
 
-@media (max-width: 675px) {
-  .envelope {
-    width: 380px;
+/* Media query para iPhone 7 Plus */
+@media (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  .envelope1,
+  .envelope2 {
+    width: 25%; /* Ajuste para telas menores */
   }
 
   .card {
-    height: 330px;
-    width: 230px;
+    height: 320px; /* Ajustando a altura do card */
   }
 }
